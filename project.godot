@@ -11,8 +11,14 @@ config_version=5
 [application]
 
 config/name="SnakeClone"
+run/main_scene="uid://bynu51t883a4j"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1000
+window/size/viewport_height=1000
 
 [physics]
 
