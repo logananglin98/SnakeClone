@@ -1,9 +1,31 @@
 [gd_scene format=3 uid="uid://de5k8qt7jh7a4"]
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_sh265"]
+[ext_resource type="Script" uid="uid://dt1bag4ccrcsj" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://ultsxsl2u0fe" path="res://assets/square.png" id="2_onrkg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i3pqv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_onrkg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
+size = Vector2(51, 51)
 
 [node name="Player" type="Area2D" unique_id=1726399432]
+script = ExtResource("1_4flbx")
 
-[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1835616607]
-color = Color(0, 1, 0.20392157, 1)
-texture = SubResource("ViewportTexture_sh265")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1811126698]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_i3pqv")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=110885303]
+position = Vector2(-1.5, -0.5)
+shape = SubResource("RectangleShape2D_onrkg")
+metadata/_edit_group_ = true
