@@ -15,17 +15,17 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
-size = Vector2(51, 51)
+size = Vector2(42, 41)
 
 [node name="Player" type="Area2D" unique_id=1726399432]
 script = ExtResource("1_4flbx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1811126698]
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.08, 0.08)
 sprite_frames = SubResource("SpriteFrames_i3pqv")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=110885303]
-position = Vector2(-1.5, -0.5)
+position = Vector2(-1, -0.5)
 shape = SubResource("RectangleShape2D_onrkg")
 metadata/_edit_group_ = true

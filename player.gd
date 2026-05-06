@@ -22,15 +22,15 @@ func _process(delta: float) -> void:
 		direction = "down"
 	
 	if direction == "left":
-		velocity = Vector2(-1, 0)
+		position += Vector2(-1, 0)
 	elif direction == "right":
-		velocity = Vector2(1, 0)
+		position += Vector2(1, 0)
 	elif direction == "up":
-		velocity = Vector2(0, -1)
+		position += Vector2(0, -1)
 	elif direction == "down":
-		velocity = Vector2(0, 1)
+		position += Vector2(0, 1)
 		
-	velocity = velocity * speed
-	
-	position += velocity * delta
+	#velocity = velocity * speed
+	#
+	#position += velocity * delta
 		
