@@ -6,8 +6,8 @@
 [node name="Node2D" type="Node2D" unique_id=1414509010]
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=754239602]
-position = Vector2(500, 500)
+position = Vector2(500, 502)
 texture = ExtResource("1_ig7tw")
 
 [node name="Player" parent="." unique_id=1726399432 instance=ExtResource("2_0xm2m")]
-position = Vector2(28, 26)
+position = Vector2(276, 428)
