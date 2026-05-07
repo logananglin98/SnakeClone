@@ -13,9 +13,17 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_3ed3y"]
+radius = 26.172504
+
 [node name="Apple" type="Area2D" unique_id=1171369711]
+scale = Vector2(0.8, 0.8)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1667752562]
 sprite_frames = SubResource("SpriteFrames_n78qv")
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=197476165]
+scale = Vector2(0.8, 0.8)
+shape = SubResource("CircleShape2D_3ed3y")
+metadata/_edit_group_ = true

@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://drqfk6eahjs1y" path="res://assets/bg.png" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://de5k8qt7jh7a4" path="res://player.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://ghimivj8qlvg" path="res://apple.tscn" id="3_h2yge"]
 
 [node name="Node2D" type="Node2D" unique_id=1414509010]
 
@@ -11,3 +12,6 @@ texture = ExtResource("1_ig7tw")
 
 [node name="Player" parent="." unique_id=1726399432 instance=ExtResource("2_0xm2m")]
 position = Vector2(276, 428)
+
+[node name="Apple" parent="." unique_id=1171369711 instance=ExtResource("3_h2yge")]
+position = Vector2(474, 426)
