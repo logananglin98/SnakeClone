@@ -24,23 +24,25 @@ func _process(delta: float) -> void:
 		direction = "down"
 
 func move_snake() -> void:	
-	if position.x > 926 and direction == "right":
+	match direction:
+		"left":
+			position += Vector2(-dist, 0)
+		"right":
+			position += Vector2(dist, 0)
+		"up":
+			position += Vector2(0, -dist)
+		"down":
+			position += Vector2(0, dist)
+			
+	# moves snake head across screen if the player tries to move off-screen
+	if position.x > 1000 and direction == "right":
 		position.x = 26
-	elif position.x < 76 and direction == "left":
+	elif position.x < 0 and direction == "left":
 		position.x = 976
-	elif position.y < 78 and direction == "up":
+	elif position.y < 0 and direction == "up":
 		position.y = 978
-	elif position.y > 928 and direction == "down":
+	elif position.y > 1000 and direction == "down":
 		position.y = 28 
-	else:
-		match direction:
-			"left":
-				position += Vector2(-dist, 0)
-			"right":
-				position += Vector2(dist, 0)
-			"up":
-				position += Vector2(0, -dist)
-			"down":
-				position += Vector2(0, dist)
+		
 	last_direction = direction
-	print(global_position)
+	# print(global_position)
