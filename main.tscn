@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://bynu51t883a4j"]
 
+[ext_resource type="Script" uid="uid://3rqqhvc65yjb" path="res://main.gd" id="1_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://drqfk6eahjs1y" path="res://assets/bg.png" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://de5k8qt7jh7a4" path="res://player.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://ghimivj8qlvg" path="res://apple.tscn" id="3_h2yge"]
 
 [node name="Node2D" type="Node2D" unique_id=1414509010]
+script = ExtResource("1_1bvp3")
 
 [node name="Bg" type="Sprite2D" parent="." unique_id=754239602]
 position = Vector2(500, 502)
