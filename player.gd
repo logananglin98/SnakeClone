@@ -45,4 +45,4 @@ func move_snake() -> void:
 		position.y = 28 
 		
 	last_direction = direction
-	# print(global_position)
+	print(global_position)
